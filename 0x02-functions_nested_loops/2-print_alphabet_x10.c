@@ -4,12 +4,11 @@
  * print_alphabet_x10 - prints alpha 10 times
  * Return: void
  */
-
 void print_alphabet_x10(void)
 {
-
 	char ch;
 	int t;
+
 	t = 0;
 
 	while (t < 10)
@@ -18,9 +17,8 @@ void print_alphabet_x10(void)
 		{
 			_putchar(ch);
 		}
+		_putchar('\n');
 
-	_putchar('\n');	
-	t++;
+		t++;
 	}
-
 }
