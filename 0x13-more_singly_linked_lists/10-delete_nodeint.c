@@ -22,11 +22,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		prev = curr;
 		curr = curr->next;
 	}
-	if (curr == NULL) /* If index is greater than the number of nodes */
+	if (curr == NULL)
 		return (-1);
-	if (prev != NULL) /* If the node to be deleted is not the first node */
+	if (prev != NULL)
 		prev->next = curr->next;
-	else /* If the node to be deleted is the first node */
+	else
 		*head = curr->next;
 	free(curr);
 	return (1);
